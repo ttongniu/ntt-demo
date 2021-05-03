@@ -17,6 +17,9 @@
 
   <modules>
     <module>demo-rocketmq</module>
+    <module>demo-redis</module>
+    <module>demo-dubbo-provider</module>
+    <module>demo-dubbo-consumer</module>
   </modules>
 
   <properties>

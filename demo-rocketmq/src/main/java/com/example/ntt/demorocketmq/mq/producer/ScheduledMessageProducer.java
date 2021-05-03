@@ -12,6 +12,7 @@ public class ScheduledMessageProducer {
   public static void main(String[] args) {
 
     DefaultMQProducer producer = new DefaultMQProducer("nttProducerGroup");
+    producer.setNamesrvAddr("localhost:9876");
     // Launch producer
     try {
       producer.start();

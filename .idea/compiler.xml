@@ -8,9 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo-redis" />
         <module name="demo-rocketmq" />
+        <module name="demo-dubbo-provider" />
+        <module name="demo-dubbo-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo-dubbo-consumer" target="1.8" />
+      <module name="demo-dubbo-provider" target="1.8" />
       <module name="demo-redis" target="1.8" />
       <module name="demo-rocketmq" target="1.8" />
       <module name="ntt-demo" target="1.8" />
@@ -18,6 +22,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-dubbo-consumer" options="-parameters" />
+      <module name="demo-dubbo-provider" options="-parameters" />
       <module name="demo-redis" options="-parameters" />
       <module name="demo-rocketmq" options="-parameters" />
       <module name="ntt-demo" options="-parameters" />
